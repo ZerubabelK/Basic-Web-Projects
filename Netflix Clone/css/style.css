@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: rgb(126, 36, 36);
+    --secondary-color: #1e1e1e;
+}
+body{
+    font-family: 'Netflix sans', sans-serif;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--secondary-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+  }
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 15;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+.nav-left{
+    margin-top: 15px;
+    margin-left: 20px;
+    max-height: 120px;
+}
+.nav-left img{
+    object-fit: contain;
+    max-height: 40px;
+}
+.nav-right{
+    max-height: 120px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.nav-right img{
+    object-fit: contain;
+    max-height: 50px;
+}
+
+.nav-bar.active{
+    transition: 0.5s ease-in;
+    background-color: var(--secondary-color);
+}
+
+/* Banner */
+.banner{
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    /* background-image: url("/IMG/13.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    background-position: center;
+}
+
+.banner_contents{
+    z-index: 12;
+    position: absolute;
+    justify-content: space-between;
+    top: 65%;
+    color: #fff;
+}
+
+.banner_buttons{
+    display: flex;
+}
+
+.banner_buttons button{
+    background-color: rgb(151, 151, 151);
+    margin-left: 20px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+.banner_buttons button:hover {
+    background-color: rgb(255, 251, 251);
+}
+.banner_description{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 400px;
+}
+.banner_title{
+    font-size: 22px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    font-family: inherit;
+    margin-left: 20px;
+}
+
+.banner__fadeBottom{
+    height: 7.4rem;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37,37,37, .61),
+      #111
+    );
+}
+
+.headrow{
+    position: relative;
+}
+.row_title{
+    display: block;
+    color: #eee;
+}
+
+.row{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+.row_poster{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.row_posters{
+    width: 100%;
+    display: flex;
+}
+.row_poster img{
+    width: 220px;
+    height: 100%;
+    object-fit: contain;
+}
+.row_poster img:hover {
+    transition: 0.2s ease-out;
+    transform: scale(1.1);
+}

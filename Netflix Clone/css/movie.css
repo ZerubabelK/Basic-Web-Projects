@@ -1,0 +1,122 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: rgb(126, 36, 36);
+    --secondary-color: #1e1e1e;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--secondary-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+  }
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 15;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background-color: var(--secondary-color);
+}
+.nav-left{
+    margin-top: 15px;
+    margin-left: 20px;
+    max-height: 120px;
+}
+.nav-left img{
+    width: 100%;
+    max-height: 40px;
+}
+.nav-right{
+    max-height: 120px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.nav-right img{
+    width: 100%;
+    max-height: 50px;
+}
+
+.nav-bar.active{
+    animation: scroll 2s;
+}
+/* Overview */
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+}
+.poster{
+    background-color: var(--primary-color);
+    height: 90vh;
+    width: 30%;
+}
+.poster img{
+    width: 100%;
+    object-fit: contain;
+}
+.overview{
+    background-color: brown;
+    height: 90vh;
+    width: 65%;
+    margin-left: 30px;
+}
+.title{
+    display: inline-block;
+    color: #eee;
+    margin-top: 20%;
+    margin-left: 30px;
+}
+.rating{
+    display: inline-block;
+    color: #eee;
+    margin-left: 35px;
+}
+.description{
+    display: block;
+    color: #eee;
+    margin-left: 35px;
+    font-family: inherit;
+    max-width: 70%;
+}
+.casts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+.cast{
+    margin-left: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: var(--primary-color);
+}
+
+.trailers{
+    margin-top: 20px;
+    max-height: 60vh;
+    width: 100%;
+}
+.trailers iframe{
+    margin-top: 20px;
+    object-fit: contain;
+    margin-left: 200px;
+}

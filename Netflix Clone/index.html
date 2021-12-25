@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="nav-bar">
+        <div class="nav-left">
+            <img src="./IMG/logo.svg" alt="">
+        </div>
+        <div class="nav-right">
+            <img src="./IMG/avatar.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+    <!-- BANNER -->
+    <header class="banner">
+        <div class="banner_contents">
+            <!-- <h2 class="banner_title">DUNE</h2> -->
+            <div class="banner_buttons">
+                <button class="play_button">Play</button>
+                <button class="list_button">My List</button>
+            </div>
+            <p class="banner_description"></p>
+        </div>
+        <div class="banner_fadeBotton"></div>
+    </header>
+
+    <!-- Row -->
+    <div class="headrow">
+        <div class="row">
+            <!-- <h2 class="row_title"></h2> -->
+            <div class="row_posters">
+                <!-- <div class="row_poster"></div> -->
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        window.addEventListener("scroll",function(){
+  
+          var nav = document.querySelector(".nav-bar");
+          nav.classList.toggle("active", window.scrollY > 0);
+        }) 
+      </script>
+
+    <!-- Script Link -->
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/movie.js"></script> -->
+</body>
+</html>
